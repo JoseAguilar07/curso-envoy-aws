@@ -1,4 +1,4 @@
-/*
+ /*
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
@@ -8,12 +8,12 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-use Iluminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Route;
 
-Route::get(url'/', function () {
-    return view('welcome');
+Route::get(uri:'/', function () {
+    return view:('welcome');
 });
 
-Route::get(url'/test', function () {
+Route::get(uri:'/test', function () {
     return 'Hola Test';
 });
