@@ -1,6 +1,7 @@
 @servers(['aws'=>'ubuntu@3.19.56.195'])
 
 @include ('vendor/autoload.php')
+<<<<<<< HEAD
 @setup
   if (!isset($on)){
     throw new Exception ('La variable --on no esta definida');
@@ -24,4 +25,8 @@
   echo "hemos entrado al directorio /var/www/html";
   git clone {{$origin}}
   echo "repositorio clonado correctamente";
+@endtask
+
+@task('test')
+  echo "Tarea test agregada";
 @endtask
