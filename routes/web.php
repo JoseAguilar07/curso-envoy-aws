@@ -1,5 +1,3 @@
-<?php
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -10,7 +8,12 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use Iluminate\Support\Facades\Route;
 
-Route::get('/', function () {
+Route::get(url'/', function () {
     return view('welcome');
+});
+
+Route::get(url'/test', function () {
+    return 'Hola Test';
 });
