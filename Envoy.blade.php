@@ -7,7 +7,7 @@
   }
   $branch = isset($branch) ? $branch:'master';
   $origin = 'git@github.com:JoseAguilar07/curso-envoy.aws';
-  $app_dir = '/var/www/html';
+  $app_dir = '/var/www/html/cuso-envoy-aws';
 @endsetup
 
 @task('test')
