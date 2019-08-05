@@ -17,3 +17,7 @@ Route::get(uri:'/', function () {
 Route::get(uri:'/test', function () {
     return 'Hola Test';
 });
+
+Route::get(uri:'/hola/{name}', function ($name) {
+    return 'Hola '. $name;
+});
